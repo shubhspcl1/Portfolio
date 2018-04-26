@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="animate.css">
+        <link href="Main2.css" rel="stylesheet"/>
+        <link href="hover.css" rel="stylesheet" media="all">
+        <script src="jquery-1.10.2.min.js"></script>
+        <script src="JQUERY%20Main.js"></script>
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    </head>
+    <body>
+        <div class="se-pre-con"></div>
+        <div id="main">
+            <div id="home1"><a href="face.html">
+            <img src="stylesheets/images/homepage.svg" width="40px" height="50px" style="position: fixed; text-decoration: none;left: 95%;z-index: 200;">
+        </a>
+        </div>
+            <div id="slider">
+
+        
+                <div id="d">
+                    E
+                </div>
+                <div class="line"></div>
+                <div id="data">
+                    Step-1<br>
+                    <hr size="2" width="50px" color="#292e49" align="left"/>
+                    <div class="title">Basic<br>Education</div>
+                    <div class="info">
+                        <ul>
+                        <li type="circle">
+                            Completed high school from R.S.M senior secondary school,Gorakhpur in 2014
+                        </li>
+
+                        <li type="circle">
+                            Completed Intermediate from Oxford Public school,Gorakhpur in 2016
+                            
+                        </li>
+                           <li type="circle">
+                            Cleared JEE Mains 2016.
+                            
+                            
+                        </li>
+                           <li type="circle">
+                            Cleared VITEEE with All India rank-495 in 2016
+                            
+                        </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div id="a">
+                    S
+                </div>
+                <div class="line"></div>
+                <div id="data2">
+                    Step-2<br>
+                    <hr size="2" width="50px" color="#292e49" align="left"/>
+                    <div class="title">SKILLS<br></div>
+                    <div class="info">
+                        <ul>
+                            <li type="circle">
+                                Basic knowledge of C/C++
+                            </li>
+                             <li type="circle">
+                              HTML
+                            </li>
+                             <li type="circle">
+                              CSS,SCSS
+                            </li>
+                            <li type="circle">
+                                Ruby on Rails
+                                
+                            </li>
+                             <li type="circle">
+                                Javascript,JQuery
+                            </li>
+                             <li type="circle">
+                                Bootstrap
+                                
+                            </li>
+                             <li type="circle">
+                              AJAX/JSON-Handling
+                                
+                            </li>
+                             <li type="circle">
+                                GIT/GITHUB
+                                
+                            </li>
+                             
+                        </ul>
+                    </div>
+                </div>
+
+            
+                <div id="f">
+                    P
+                </div>
+                <div class="line"></div>
+                <div id="data3">
+                    Step-3<br>
+                    <hr size="2" width="50px" color="#292e49" align="left"/>
+                    <div class="title">Projects<br></div>
+                    <div class="info">
+
+                        <ul>
+                            <li type="circle">
+
+                                Rating and Review website completely in Ruby on rails
+                                
+                                
+                            </li>
+                             <li type="circle">
+                                Voting System WebApp
+                               
+                                
+                            </li>
+                             <li type="circle">
+                              
+                                A blog-engine for personal chat and posts
+                            </li>
+                             <li type="circle">
+                              
+                                An Online Library Portal
+                            </li>
+                             <li type="circle">
+                              
+                              Chatbot on NodeJs using socket.io
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="t">
+                    C
+                </div>
+                <div class="line"></div>
+                <div id="data4">
+                    CASE 4<br>
+                    <hr size="2" width="50px" color="#292e49" align="left"/>
+                    <div class="title">CYBER<br>SECURITY</div>
+                    <div class="info">
+                        I am just a noob in cyber-security but having a great interests on it.<br>
+                        Have some basic knowledge on  Computer Networks.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="navigation">
+            <a href="#" id="circle1" class="nav"></a>
+            <a href="#" id="circle2" class="nav"></a>
+            <a href="#" id="circle3" class="nav"></a>
+            <a href="#" id="circle4" class="nav"></a>
+            
+
+        </div>
+    </body>
+    <script type="text/javascript">
+        var l1=$("#d");
+        var l2=$("#a");
+        var l3=$("#f");
+        var l4=$("#t");
+        
+        var layer=$("#main");
+        
+        layer.mousemove(function(e){
+            var valueX=(e.pageX * -1 / 40) ;   
+            l1.css({'background-position':(valueX-200)+' '+0}); 
+            l2.css({'background-position':(valueX)+' '+0}); 
+            l3.css({'background-position':(valueX-200)+' '+0}); 
+            l4.css({'background-position':(valueX+600)+' '+0}); 
+        }); 
+    </script>    
+
+
+
+    <script type="text/javascript">
+        setTimeout(function(){$(".se-pre-con").fadeOut("slow");}, 800);
+        </script>
+
+
+</html>

@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="Main.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="animate.css">
+        <link href="hover.css" rel="stylesheet" media="all">
+        <script src="jquery-1.10.2.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+    </head>
+    <body style="overflow: hidden;">
+
+
+
+          <div class="se-pre-con"></div>
+
+
+
+                  <h1>
+          <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, I am Shubham.", "I am Creative.", "I Love web.", "I Love to Develope new Stuff." ]'>
+            <span class="wrap"></span>
+          </a>
+             </h1>
+
+
+
+            <label>
+              <input type='checkbox'>
+               <span class='menu'>
+                <span class='hamburger'></span>
+               </span>
+              <ul style="list-style: none;">
+                <li>
+                  <a href='face.html' class="hvr-grow">Home</a>
+                </li>
+                <li>
+                  <a href='about.html' class="hvr-grow">About & Works</a>
+                </li>
+                <li>
+                  <!-- <a href='#' class="hvr-grow">Work</a> -->
+                </li>
+              </ul>
+              </label>
+
+
+
+        <div id="menu">
+            <img src="stylesheets/images/logo.png" height="40px" width="75px"/ >
+        </div>
+        <div id="main">
+            <table border="0">
+               <!--  <tr align="center">
+                    <td>
+                        <img src="logo.png" height="40px" width="75px"/>
+                    </td>
+                </tr> -->
+                <tr align="center">
+                    <td>
+                        <img src="stylesheets/images/1.png" height="140px" width="290px"/>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <div id="label">
+                            THE SHUBH_SPCL
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+            <!-- <img src="Shoe.png" id="shoe" width="45%"/> -->
+            <img src="stylesheets/images/BG%20ICON.png" id="icon" width="23%"/>
+            <canvas id="smoke"></canvas>
+        </div>
+        
+        <a href="about.html" style="text-decoration: none;" class="nav"><div id="btn">DISCOVER MORE</div></a>
+
+        <div id="msg">
+            <a href="isoeffect/isometric.html"><img src="stylesheets/images/pencil.svg" width="50px" height="50px;"  class="wow bounceInUp" data-wow-delay="1s"></a>
+        </div>
+
+
+        <!-- <div id="mainpulse"> -->
+        <div id="location">
+           <a href="map.html"> <img src="stylesheets/images/placeholder.svg" width="50px" height="50px";" class="wow bounceInUp" data-wow-delay="1s"></a>
+        </div>
+
+        <div id="wave"></div>
+        <div id="wave2"></div>
+
+
+       <!--  <div id="hamburger" style="color: white;display: none;">
+            <center>
+                <ul style="list-style: none; font-size: 30px; margin-top: 35vh;margin-left: -104px">
+                    <li><a href="face.html" class="effect-shine">Home</a></li>
+                    <li><a href="about.html" class="effect-shine">About</li>
+                    <li><a href="" class="effect-shine">Contact</a></li>
+                </ul>
+            </center>
+        </div> -->
+        
+
+
+       <!-- </div>  -->
+
+         <script type="text/javascript">
+            $("canvas").css('height', screen.height);
+            $("canvas").css('width', screen.width);
+            $("#hamburger").css('height', screen.height);
+            $("#hamburger").css('width', screen.width);
+        </script>
+
+<script type="text/javascript">
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script>
+        
+        <script src="smoke.js"></script>
+
+        <script type="text/javascript">
+                setTimeout(function(){$(".se-pre-con").fadeOut("slow");}, 800);
+        </script>
+
+<!-- wow js -->
+
+          <script src="wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+
+
+
+    </body>
+</html>
