@@ -119,6 +119,11 @@ body{
     position: absolute;
     bottom: 3.5%;
     left: 1.5%;
+    /*visibility: visible;*/
+}
+
+#location img{
+  visibility: visible;
 }
 
 #location{
@@ -131,6 +136,7 @@ body{
     /*left: 50%;*/
     transform: translate(-50%,-50%);
     transition: transform .3s ease;
+    /*visibility: visible;*/
 }
 
 #msg img:hover {
@@ -138,6 +144,7 @@ body{
   animation-iteration-count: infinite;*/
   transform: rotate(-30deg);
   transition: all .3s linear;
+
 }
 
 /*@keyframes shake {
